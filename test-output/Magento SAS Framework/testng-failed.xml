@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Magento SAS Framework]">
+  <parameter name="appURL" value="http://socialannextestsite.com/index.php/categories/dresses/casual/dumbo-boyfriend-jean.html"/>
+  <test name="FirefoxTest(failed)">
+    <parameter name="browserType" value="firefox"/>
+    <classes>
+      <class name="com.pack.test.CompleteShareandSaveTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="pinShare"/>
+          <include name="tearDown"/>
+          <include name="fBShare"/>
+          <include name="emailShare"/>
+          <include name="twitterShare"/>
+          <include name="initializeTestBaseSetup"/>
+        </methods>
+      </class> <!-- com.pack.test.CompleteShareandSaveTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test name="ChromeTest(failed)">
+    <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="com.pack.test.CompleteShareandSaveTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="pinShare"/>
+          <include name="tearDown"/>
+          <include name="fBShare"/>
+          <include name="emailShare"/>
+          <include name="twitterShare"/>
+          <include name="initializeTestBaseSetup"/>
+        </methods>
+      </class> <!-- com.pack.test.CompleteShareandSaveTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Magento SAS Framework] -->

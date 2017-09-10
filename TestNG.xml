@@ -1,8 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<suite name="Suite" parallel="false">
-  <test name="Test">
-    <classes>
-      <class name="com.pack.test.TestNG"/>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Magento SAS Framework" parallel="false">
+<parameter name="appURL" value="http://socialannextestsite.com/index.php/categories/dresses/casual/dumbo-boyfriend-jean.html"/>
+  <test name="FirefoxTest">
+    <parameter name="browserType" value="firefox"/>
+      <classes>
+        <class name="com.pack.test.CompleteShareandSaveTest"/>
+      </classes>
+   </test> 
+   <test name="ChromeTest">
+    <parameter name="browserType" value="chrome"/>
+     <classes>
+      <class name="com.pack.test.CompleteShareandSaveTest"/>   
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test>
+    
+
+</suite>
