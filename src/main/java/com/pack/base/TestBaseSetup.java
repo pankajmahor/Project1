@@ -52,9 +52,9 @@ public class TestBaseSetup
 		System.setProperty("webdriver.chrome.driver", driverPath
 				+ "chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();
 		driver.navigate().to(appURL);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 		return driver;
 	}
 	private static WebDriver initFirefoxDriver(String appURL) 
